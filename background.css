@@ -1,0 +1,9 @@
+.banner {
+    height: 100vh;
+    background-image: url(/imagens/entrada.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+   
+}

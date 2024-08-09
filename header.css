@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px; 
+    width: 100%;
+    background-color: rgb(35, 33, 34);
+    max-width: 1440px;
+    padding-top: 10px;
+    position: fixed;
+    transition: all 0.4s;
+    padding: 15px 4%;
+    z-index: 10;
+}
+
+header.rolagem {
+    padding: 3px 4%;
+    background-color:rgb(35, 33, 34);
+
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 64px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navigation-link {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 20px;
+}
+
+.navigation-link:hover {
+    color: orange;
+}
+
+.navigation-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60%;
+    height: 1px;
+    background: green;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    transform-origin: right;
+}
+
+.navigation-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.navigation-social {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.navigation-social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+
+.navigation-social svg:hover {
+    opacity: 1;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger-menu span {
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navigation-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.banner {
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.conheca {
+    padding: 20px;
+}
