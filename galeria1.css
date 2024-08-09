@@ -84,7 +84,7 @@ header {
     max-height: 90%;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    border-radius: 80PX;
+    border-radius: 100px;
 }
 
 .lightbox.show {
